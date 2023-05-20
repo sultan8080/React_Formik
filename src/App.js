@@ -4,7 +4,7 @@ import Newsletter from './Newsletter';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App w-25 border mt-5 p-5 mx-auto shadow-lg">
       <Newsletter />
     </div>
   );
