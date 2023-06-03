@@ -3,9 +3,13 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 const Newsletter = () => {
+
+
   return (
     <Formik
       initialValues={{ firstName: "", lastName: "", email: "" }}
+
+
       validationSchema={Yup.object({
         firstName: Yup.string()
           .max(15, "Must be 15 characters or less")
@@ -28,7 +32,10 @@ const Newsletter = () => {
         <ErrorMessage name="firstName" />
         <br />
         <label htmlFor="lastName">Last Name</label>
-        <Field name="lastName" type="text" />
+        <Field
+        name="lastName"
+        type="text" />
+        <div className=""></div>
         <ErrorMessage name="lastName" />
         <br />
         <label htmlFor="email">Email Address</label>
